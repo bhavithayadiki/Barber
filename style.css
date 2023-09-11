@@ -1,0 +1,354 @@
+*{ 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+.bg{ 
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.9)), url('images/Barber_Shop_img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.logo{ 
+    width: 150px;
+    position: absolute;
+ top: 4%;
+ left: 10%;
+}
+.bg-text{ 
+    text-align: center;
+    color: #fff;
+    padding-top: 180px;
+    
+}
+.bg-text h1{ 
+    font-size: 100px;
+    font-family: 'Kurale', serif;
+}
+.bg-text p{ 
+    font-size: 20px;
+    font-style: italic;
+}
+.bg-btn{ 
+    margin: 30px auto  0px;
+}
+.bg-btn a{ 
+    margin-left: 10px;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    position: relative;
+    z-index: 1;
+    transition: color 0,5s;
+}
+.bg-btn a span{ 
+    width: 5%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: -1;
+    transition: 0.4s;
+
+}
+.bg-btn a:hover span{ 
+    width: 100%;
+   
+}
+.bg-btn a:hover{ 
+    color: #000;
+}
+
+#navBar { 
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    right: 0;
+    top: 0;
+    background: #848a89; 
+    z-index: 2;
+    transition: 0.5s;
+}
+nav ul li { 
+    list-style: none;
+    margin:  40px 20px;
+  
+}
+nav ul li a{ 
+    text-decoration: none;
+    color:#000 ;
+}
+#menuBtn{ 
+    width: 60px;
+    height: 60px;
+    background-color:#848a89 ;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 10px;
+z-index: 3;
+cursor: pointer;
+}
+#menuBtn img{ 
+ width: 20px;
+ margin-top: 20px;
+}
+
+@media screen and (max-width:770px) {
+    .bg-text h1{ 
+        font-size: 40px;
+      
+    }
+    .bg-text{ 
+       padding-top: 200px;
+        }
+}
+/* features */
+#features{ 
+    width: 100%;
+   
+    padding: 50px 0px ;
+}
+.text-features{ 
+    text-align: center;
+    padding-bottom: 50px;
+}
+.text-features p{ 
+    margin-bottom: 20px ;
+    font-size: 20px ;
+    color:#258e7c ;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.text-features p::after{ 
+   content: '';
+   width: 50px;
+   height: 35px;
+   background: linear-gradient(#019587,#fff);
+   position: absolute;
+   top: -20px;
+   left: 0;
+   z-index: -1;
+   border-top-left-radius: 50%;
+   border-bottom-right-radius: 90%;
+}
+.text-features h1{ 
+    font-size: 50px;
+}
+.text-box{ 
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+
+}
+.text-text{ 
+    flex-basis: 50%;
+}
+.text-img{ 
+    flex-basis: 50%;
+    margin: auto;
+}
+.text-img img{ 
+    width: 60%;
+    border-radius: 10px;
+}
+.text-text h1{ 
+text-align: left;
+margin-bottom: 10px;
+font-weight: 100;
+color:#124747 ;
+}
+.feature-text p{ 
+    text-align: justify;
+}
+@media screen and (max-width:770px){ 
+    .text-features h1{ 
+        font-size: 35px;
+    } 
+    .text-text{ 
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .text-img img{ 
+        width: 100%;
+        
+    }
+    .feature-text p{ 
+        margin-bottom: 20px;
+    }
+}
+/* services */
+#services{ 
+    width: 100%;
+    padding: 70px 0px;
+    background-color: #a7b5b3;
+}
+.service-box{ 
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.single-service{ 
+    flex-basis:48% ;
+    text-align: center;
+    border-radius: 9px;
+    margin-bottom:20px ;
+    color:#fff ;
+}
+.single-service img{ 
+    width: 100%;
+    border-radius: 10px;
+}
+.single-service img:hover{ 
+    opacity: 0.5;
+    background: linear-gradient(#0d2723, #fff);
+}
+@media screen and (max-width:770px){ 
+    .service-box{ 
+        width: 100%;
+    }
+}
+.service-desc{ 
+    color: #000;
+}
+hr{ 
+    background: #000;
+    height: 3px;
+    margin: 10px auto;
+    width: 60%;
+}
+.service-desc p{ 
+    font-size: 15px;
+}
+@media screen and (max-width:770px){
+    .single-service{ 
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+   
+    hr{ 
+        margin:5px auto
+    }
+}
+#testimonial{ 
+    width: 100%;
+    padding:70px 0px ;
+}
+.testimonial-row{ 
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start ;
+    flex-wrap: wrap;
+}
+.tenimonial-col{ 
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px  #0d2723;
+    cursor: pointer;
+    transition: 1s;
+
+}
+.tenimonial-col p{ 
+    font-size: 14px;
+}
+.user { 
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+}
+.user img{ 
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+.tenimonial-col:hover{ 
+    transform: translateY(-8px);
+}
+@media screen and (max-width:770px){
+    .tenimonial-col{ 
+        flex-basis: 100%;
+    }
+}
+#footer{ 
+    padding: 30px 0 20px;
+    background-color:#848a89 ;
+    position: relative;
+}
+.footer-row{ 
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap ;
+}
+.footer-left, .footer-right{ 
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.footer-right{ 
+    text-align:right ;
+}
+.footer-row h1{ 
+    margin: 10px 0px;
+}
+.footer-row p{ 
+    line-height: 35px;
+}
+.footer-img{ 
+    max-width: 350px;
+    opacity: 0.1;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50% , -50% );
+}
+.social-links{ 
+    text-align: center;
+}
+.social-links i{ 
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid #0d2723 ;
+    margin: 40px 5px 0px;
+   transition: 0.5s;
+    cursor: pointer;
+}
+.social-links i:hover{ 
+    background-color: rgb(65, 71, 81);
+    transform: translateY(-7px);
+}
+.social-links p{ 
+    font-size: 18px;
+    margin-top:10px;
+}
+@media screen and (max-width:770px){
+    .footer-left, .footer-right{ 
+        flex-basis: 100%;
+        font-size: 15px;
+    }
+    .footer-img{ 
+        top: 25%;
+    }
+
+}
+
